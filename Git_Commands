@@ -1,0 +1,111 @@
+1} git config --global user.name “Your_name” = set a name that is identifiable for credit when review version history 
+
+2} git config --global user.email “valid-email” = set an email address that will be associated with each history marker 
+
+3} git config --global color.ui auto set automatic = command line coloring for Git for easy reviewing
+
+4} git init = to initialize existing directory as git repository
+
+5} git status = to check status of git repository
+
+6} git log = to see history of commits in git repository
+
+7} git add <file_name> = to add file to the staged area
+
+8} git restore --staged <file_name> = to unstage the file
+
+9} git restore <file_name> or git checkout --(one_space)<file_name>= to restore changes of file which is not staged yet
+
+10} git add . = to add all modified files and directories to staged area
+
+11} git restore --staged . = to unstage all staged files and directories and modification
+
+12} git commit -m "message" = to commit modification in git repository
+
+13} git diff = compares staging area with working directory
+
+14} git diff --staged = compares staging area with last commit
+
+15} git commit -a -m "message" = to commit tracked files without staging them(untracked files can't be commited directly)
+
+16} git rm <file_name> = to delete file and stage it(removed file will be automatically staged and states that deleted this file)
+
+17} git mv <file_name> <file_new_name> = to rename file and stage it automatically
+
+18} git rm --cached <file_name> = to untrack tracked file in repository
+
+19} git clone <URL> = to clone git repository
+
+20} git clone<URL> <folder_name> = to clone git repository in particular directory
+
+21} git log -p = to display commit history along with their differences
+
+22} git log -p -<number> = to display last n commit along with their differences
+
+23} git log -<number> = to display last n commit
+
+24} git log --stat = to display commits and their diff in short
+
+25} git log --pretty=oneline or git log --oneline =(to display git commits in pretty mode and each commit in single line)
+
+26} git log --pretty=full & git log --pretty=short & git log --pretty=format:"%h---%an"
+
+27} git log --since=<number>.<days,months,years> = to display commits from last n days or years or months or weeks or minute or hour etc
+
+28} git commit --amend = to add staged area in last commit with modification in message 
+
+29} git checkout -f = to unmodify all modified files
+
+30} git config --global alias.<short_name_you_want> 'command to shorten' = to shorten commands
+
+      example:    If i want to shorten command git restore --staged <file_name> to git unstage <file_name> i have to write git config --global alias.unstage 'restore --staged'
+
+31} git config --global --unset alias.<short_name of seted alias> = to delete particular alias 
+
+32} git push -u <remote_name> <branch_name> or git push <remote_name> <branch_name> = to push into remote git repository
+
+33} git remote add <remote_name> git@Github.com:srpra2003/<name_of_remote_gitrepo_at_github>.git = to connect remote git repo with local repo
+
+34} git remote rm <remote_name> = to remove linked remote git repo
+
+35} git diff HEAD <file_name> or git diff HEAD= allows you to compare the file version in your workin directory with the file version last commited in your remote repository
+
+36} git checkout -b <new_branch_name> = to create new branch from current working branch and switch to it
+
+37} git branch = to list all branches
+
+38} git checkout <branch_name> = to switch from one branch to another
+
+39}git remote and git remote -v = to see all remote connections
+
+40} git branch -d <branch_name> = to delete particular local branch which is merged to another branch
+
+41} git branch -D <branch_name> = to delete particular local branch which is either merged or not merged with any other branch
+
+42} git branch -v = to list all branches along with their last commit
+
+42} git branch --merged    = to list branches which are merged
+
+43} git branch --no-merged = to list branches which are not merged yet
+
+44} if there is a case of merge conflict first solve it explicitly and then add then commit and then merge again
+
+45} git branch <new_branch_name> = to just create a new branch from current working branch (does n't switch to it)
+
+46} git push -d <remote_name> <branch_name> = to delete remote branch
+
+47} git push <remote> <branch_name> = to push branch modifications
+
+48} git pull <remote> <branch_name> = to pull from remote branch to local branch of repo same as git pull
+
+49} git remote rename <old_name> <new_name> = to rename a connection of remote repository
+
+50} git config --list = show all Git config properties throughout all of the variously scoped Git files.
+
+51} git reset <commit_id> = to reset to particular commit(commits above this commit will be permanently deleted)
+
+52} git stash = to stash staged area (it will clean up staged area and saves it in the stash area)
+
+53} git stash pop = to unstash the stash environment
+
+54} git stash clear = it will delete(clear) the stash area and we won't be able to get it back
