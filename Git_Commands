@@ -96,16 +96,34 @@
 
 47} git push <remote> <branch_name> = to push branch modifications
 
-48} git pull <remote> <branch_name> = to pull from remote branch to local branch of repo same as git pull
+48} git pull <remote> <branch_name> = to pull from remote branch to local branch of repo same as git pull(Good practice is to use git pull --rebase <remote> <branch_name>
 
 49} git remote rename <old_name> <new_name> = to rename a connection of remote repository
 
 50} git config --list = show all Git config properties throughout all of the variously scoped Git files.
 
-51} git reset <commit_id> = to reset to particular commit(commits above this commit will be permanently deleted)
+51} git reset <commit_id> or git reset --hard <commit_id> = to reset to particular commit(commits above this commit will be permanently deleted & use it for local commits only)
 
-52} git stash = to stash staged area (it will clean up staged area and saves it in the stash area)
+52} git stash or git stash save "message for stash save"= locally stores all the most recent changes in a workspace and resets the state of the workspace to the prior commit state
 
-53} git stash pop = to unstash the stash environment
+53} git stash pop = to unstash the stash environment by deleting it from stash area
 
 54} git stash clear = it will delete(clear) the stash area and we won't be able to get it back
+
+55} git revert <commit_id> = to revert changes to particular commit(it will not affect the commit history & will create another commit with changes of particular commit)
+
+56} git reset Head~n = reset to last nth commit
+
+57} git branch -m <old_branch_name> <new_branch_name> = t rename a branch
+
+58} git rebase <branch_name> = to merge branch to working branch by deleting history and aligning it
+
+59} git log --graph or git log --oneline --graph = to display commit history along with their graph 
+ 
+60} git rebase -i <commit_id_till_you_want_to_merge_commits> = to merge last commits to specified commits
+
+61} git cherry-pick <commit_id> = to merge single commit of one branch to another(use in case of bug fixes only)
+
+62} git stash list = to display content of stash area
+
+63} git stash apply or git stash apply <stash_id> = to retrive stash area by not deleting from stash area
