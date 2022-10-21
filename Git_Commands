@@ -108,7 +108,11 @@
 
 53} git stash pop = to unstash the stash environment by deleting it from stash area
 
+<<<<<<< HEAD
 54} git stash clear = it will delete(clear) the stash area and all stash and we won't be able to get it back
+=======
+54} git stash clear = it will delete(clear) the stash area and we won't be able to get it back
+>>>>>>> f1d78d56c12db0e16b0e45e97b8e213db57f0789
 
 55} git revert <commit_id> = to revert changes to particular commit(it will not affect the commit history & will create another commit with changes of particular commit)
 
@@ -127,5 +131,8 @@
 62} git stash list = to display content of stash area
 
 63} git stash apply or git stash apply <stash_id> = to retrive stash area by not deleting from stash area
+<<<<<<< HEAD
 
 64} git stash drop <stash_id> = to drop particular stash
+=======
+>>>>>>> f1d78d56c12db0e16b0e45e97b8e213db57f0789
