@@ -133,3 +133,5 @@
 65} git stash show <stash_id> -p = to display content of particular stash in detail
 
 66} git checkout <commit_id> = to get HEAD to particular commit(it will be detached head and to create new branch from this commit run [git switch -c <new_branch_name> ] command
+
+67} git branch -r = to display remote branches
