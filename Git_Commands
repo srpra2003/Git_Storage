@@ -135,3 +135,9 @@
 66} git checkout <commit_id> = to get HEAD to particular commit(it will be detached head and to create new branch from this commit run [git switch -c <new_branch_name> ] command
 
 67} git branch -r = to display remote branches
+
+68} git fetch <remote> <branch> or git fetch <remote> or git fetch = to fetch modification from remote repository into our local repository(it will not merge them into our working directory)
+
+69} git pull <remote> <branch> or git pull <remote> or git pull = to pull modification from remote repository into working directory(There can be merge conflicts)(git pull = git fetch + git merge)
+
+70}
