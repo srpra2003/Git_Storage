@@ -129,3 +129,5 @@
 63} git stash apply or git stash apply <stash_id> = to retrive stash area by not deleting from stash area
 
 64} git stash drop <stash_id> = to drop particular stash
+
+65} git stash show <stash_id> -p = to display content of particular stash in detail
