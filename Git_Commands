@@ -114,7 +114,7 @@
 
 56} git reset Head~n = reset to last nth commit
 
-57} git branch -m <old_branch_name> <new_branch_name> = t rename a branch
+57} git branch -m <old_branch_name> <new_branch_name> = to rename a branch
 
 58} git rebase <branch_name> = to merge branch to working branch by deleting history and aligning it
 
@@ -139,5 +139,3 @@
 68} git fetch <remote> <branch> or git fetch <remote> or git fetch = to fetch modification from remote repository into our local repository(it will not merge them into our working directory)
 
 69} git pull <remote> <branch> or git pull <remote> or git pull = to pull modification from remote repository into working directory(There can be merge conflicts)(git pull = git fetch + git merge)
-
-70}
