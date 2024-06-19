@@ -140,4 +140,4 @@
 
 69} git pull <remote> <branch> or git pull <remote> or git pull = to pull modification from remote repository into working directory(There can be merge conflicts)(git pull = git fetch + git merge)
 
-70} git checkout - = to move head to previous branch or detached head
+70} git checkout - = to move head to previous branch or detached head.
